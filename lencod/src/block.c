@@ -413,25 +413,13 @@ void intrapred_luma_16x16()
   int up_avail, left_avail, left_up_avail;
 
   for (i=0;i<17;i++)
-  {
     getNeighbour(mb_nr, -1 ,  i-1 , 1, &left[i]);
-  }
   
   getNeighbour(mb_nr, 0     ,  -1 , 1, &up);
 
-  if (!(input->UseConstrainedIntraPred))
-  {
-    up_avail   = up.available;
-    left_avail = left[1].available;
-    left_up_avail = left[0].available;
-  }
-  else
-  {
-    up_avail      = up.available ? img->intra_block[up.mb_addr] : 0;
-    for (i=1, left_avail=1; i<17;i++)
-      left_avail  &= left[i].available ? img->intra_block[left[i].mb_addr]: 0;
-    left_up_avail = left[0].available ? img->intra_block[left[0].mb_addr]: 0;
-  }
+  up_avail = up.available;
+  left_avail = left[1].available;
+  left_up_avail = left[0].available;
 
   s1=s2=0;
   // make DC prediction
