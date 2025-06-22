@@ -2214,20 +2214,8 @@ void write_one_macroblock (int eos_bit)
   //--- write header ---
   writeMBHeader (0); 
 
-  //  Do nothing more if copy and inter mode
-  if ((IS_INTERMV (currMB)  || IS_INTRA (currMB)  ) ||
-      ((img->type==B_SLICE)     && currMB->cbp != 0)  )
-  {
-    writeMotionInfo2NAL  ();
-    writeCBPandLumaCoeff ();
-    writeChromaCoeff     ();
-  }
-  else
-  { 
-    for (j=0; j < 6; j++)
-      for (i=0; i < 4; i++)
-        img->nz_coeff [img->current_mb_nr][i][j]=0;  // CAVLC
-  }
+  writeCBPandLumaCoeff();
+  writeChromaCoeff();
 
   set_last_dquant();
 

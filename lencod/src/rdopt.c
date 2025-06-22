@@ -740,9 +740,8 @@ int I16Offset (int cbp, int i16mode)
  */
 void SetModesAndRefframeForBlocks (int mode)
 {
-  int i,j,k,l;
+	int i, j;
   Macroblock *currMB = &img->mb_data[img->current_mb_nr];
-  int  bframe  = (img->type==B_SLICE);
 
   int list_offset   = ((img->MbaffFrameFlag)&&(currMB->mb_field))? img->current_mb_nr%2 ? 4 : 2 : 0;
 
@@ -752,36 +751,6 @@ void SetModesAndRefframeForBlocks (int mode)
   //--- block 8x8 mode and prediction direction ---
   switch (mode)
   {
-  case 0:
-    for(i=0;i<4;i++)
-    {
-      currMB->b8mode[i] = 0;
-      currMB->b8pdir[i] = (bframe?direct_pdir[img->block_x+(i%2)*2][img->block_y+(i/2)*2]:0);
-    }
-    break;
-  case 1:
-  case 2:
-  case 3:
-    for(i=0;i<4;i++)
-    {
-      currMB->b8mode[i] = mode;
-      currMB->b8pdir[i] = best8x8pdir[mode][i];
-    }
-    break;
-  case P8x8:
-    for(i=0;i<4;i++)
-    {
-      currMB->b8mode[i]   = best8x8mode[i];
-      currMB->b8pdir[i]   = best8x8pdir[mode][i];
-    }
-    break;
-  case I4MB:
-    for(i=0;i<4;i++)
-    {
-      currMB->b8mode[i] = IBLOCK;
-      currMB->b8pdir[i] = -1;
-    }
-    break;
   case I16MB:
     for(i=0;i<4;i++)
     {
@@ -794,71 +763,12 @@ void SetModesAndRefframeForBlocks (int mode)
     exit (1);
   }
   
-#define IS_FW ((best8x8pdir[mode][k]==0 || best8x8pdir[mode][k]==2) && (mode!=P8x8 || best8x8mode[k]!=0 || !bframe))
-#define IS_BW ((best8x8pdir[mode][k]==1 || best8x8pdir[mode][k]==2) && (mode!=P8x8 || best8x8mode[k]!=0))
   //--- reference frame arrays ---
-  if (mode==0 || mode==I4MB || mode==I16MB)
-  {
-    if (bframe)
-    { 
-      for (j=0;j<4;j++)
-        for (i=0;i<4;i++)
-        {
-          if(!mode)
-          {     //direct mode
-            enc_picture->ref_idx[LIST_0][img->block_x+i][img->block_y+j] = direct_ref_idx[LIST_0][img->block_x+i][img->block_y+j];
-            enc_picture->ref_idx[LIST_1][img->block_x+i][img->block_y+j] = direct_ref_idx[LIST_1][img->block_x+i][img->block_y+j];
-          }
-          else
-          {   //intra
-            enc_picture->ref_idx[LIST_0][img->block_x+i][img->block_y+j] = -1;
-            enc_picture->ref_idx[LIST_1][img->block_x+i][img->block_y+j] = -1;
-            
-          }
-        }
-    }
-    else
-    {
-      for (j=0;j<4;j++)
-        for (i=0;i<4;i++)
-        {
-          enc_picture->ref_idx[LIST_0][img->block_x+i][img->block_y+j] = (mode==0?0:-1);
-        }
-    }
-  }
-  else
-  {
-    if (bframe)
-    {
-      for (j=0;j<4;j++)
-        for (i=0;i<4;i++)
-        {
-          k = 2*(j/2)+(i/2);
-          l = 2*(j%2)+(i%2);
-          
-          if(mode == P8x8 && best8x8mode[k]==0)
-          {           
-            enc_picture->ref_idx[LIST_0][img->block_x+i][img->block_y+j] = direct_ref_idx[LIST_0][img->block_x+i][img->block_y+j];
-            enc_picture->ref_idx[LIST_1][img->block_x+i][img->block_y+j] = direct_ref_idx[LIST_1][img->block_x+i][img->block_y+j];
-          }
-          else
-          {
-            enc_picture->ref_idx[LIST_0][img->block_x+i][img->block_y+j] = (IS_FW ? best8x8fwref[mode][k] : -1);
-            enc_picture->ref_idx[LIST_1][img->block_x+i][img->block_y+j] = (IS_BW ? best8x8bwref[mode][k] : -1);
-          }
-        }
-    }
-    else
-    {
-      for (j=0;j<4;j++)
-        for (i=0;i<4;i++)
-        {
-          k = 2*(j/2)+(i/2);
-          l = 2*(j%2)+(i%2);
-          enc_picture->ref_idx[LIST_0][img->block_x+i][img->block_y+j] = (IS_FW ? best8x8fwref[mode][k] : -1);
-        }
-    }
-  }
+  for (j = 0; j < 4; j++)
+	  for (i = 0; i < 4; i++)
+	  {
+		  enc_picture->ref_idx[LIST_0][img->block_x + i][img->block_y + j] = (mode == 0 ? 0 : -1);
+	  }
 
   for (j=0;j<4;j++)
   {
@@ -870,24 +780,7 @@ void SetModesAndRefframeForBlocks (int mode)
          -1);
     }
   }
-  if (bframe)
-  {
-    for (j=0;j<4;j++)
-    {
-      for (i=0;i<4;i++)
-      {
-        enc_picture->ref_pic_id [LIST_1][img->block_x+i][img->block_y+j] = 
-          (enc_picture->ref_idx[LIST_1][img->block_x+i][img->block_y+j]>=0 ? 
-           enc_picture->ref_pic_num[LIST_1 + list_offset][enc_picture->ref_idx[LIST_1][img->block_x+i][img->block_y+j]]:
-           -1);
-      }
-      
-    }
-  }
 
-
-#undef IS_FW
-#undef IS_BW
 }
 
 
@@ -1082,32 +975,8 @@ int RDCost_for_macroblocks (double   lambda,      // <-- lagrange multiplier
   //=====
   //=====  GET COEFFICIENTS, RECONSTRUCTIONS, CBP
   //=====
-  if (bframe && mode==0)
-  {
-    int block_x=img->pix_x>>2;
-    int block_y=img->pix_y>>2;
-    for (i=0;i<4;i++)
-      for (j=0;j<4;j++)
-        if (direct_pdir[block_x+i][block_y+j]<0)
-          return 0;
-  }
 
-  if (mode<P8x8)
-  {
-    LumaResidualCoding ();
-  }
-  else if (mode==P8x8)
-  {
-    SetCoeffAndReconstruction8x8 (currMB);
-  }
-  else if (mode==I4MB)
-  {
-    currMB->cbp = Mode_Decision_for_Intra4x4Macroblock (lambda, &dummy);
-  }
-  else if (mode==I16MB)
-  {
-    Intra16x16_Mode_Decision  (currMB, &i16mode);
-  }
+  Intra16x16_Mode_Decision(currMB, &i16mode);
 
   if (input->rdopt==2 && img->type!=B_SLICE)
   {
@@ -1672,12 +1541,7 @@ int field_flag_inference()
    int         intra1 = 0;
    
    int         intra       = (((img->type==P_SLICE||img->type==SP_SLICE) && img->mb_y==img->mb_y_upd && img->mb_y_upd!=img->mb_y_intra) || img->type==I_SLICE);
-   int         spframe     = (img->type==SP_SLICE);
-   int         siframe     = (img->type==SI_SLICE);
-   int         bframe      = (img->type==B_SLICE);
-   int         runs        = (input->RestrictRef==1 && input->rdopt==2 && (img->type==P_SLICE || img->type==SP_SLICE || (img->type==B_SLICE && img->nal_reference_idc>0)) ? 2 : 1);
    
-   int         checkref    = (input->rdopt && input->RestrictRef && (img->type==P_SLICE || img->type==SP_SLICE));
    Macroblock* currMB      = &img->mb_data[img->current_mb_nr];
    Macroblock* prevMB      = img->current_mb_nr ? &img->mb_data[img->current_mb_nr-1]:NULL ;
    
@@ -1698,7 +1562,6 @@ int field_flag_inference()
    valid[I16MB]  = 1;
    lambda_mode = lambda_motion = QP2QUANT[max(0, img->qp - SHIFT_QP)];
    lambda_motion_factor = LAMBDA_FACTOR (lambda_motion);
-   
    
    // reset chroma intra predictor to default
    currMB->c_ipred_mode = DC_PRED_8;
@@ -1723,15 +1586,13 @@ int field_flag_inference()
   
 	//===== set parameters for chosen mode =====
   SetModesAndRefframeForBlocks(best_mode);
-  if (best_mode != I4MB)
-  {
-	  for (k = 0, j = img->block_y; j < img->block_y + 4; j++)
-		  for (i = img->block_x; i < img->block_x + 4; i++, k++)
-		  {
-			  ipredmodes[i][j] = DC_PRED;
-			  currMB->intra_pred_modes[k] = DC_PRED;
-		  }
-  }
+
+  for (k = 0, j = img->block_y; j < img->block_y + 4; j++)
+	  for (i = img->block_x; i < img->block_x + 4; i++, k++)
+	  {
+		  ipredmodes[i][j] = DC_PRED;
+		  currMB->intra_pred_modes[k] = DC_PRED;
+	  }
 
   // precompute all chroma intra prediction modes
   IntraChromaPrediction8x8(NULL, NULL, NULL);
