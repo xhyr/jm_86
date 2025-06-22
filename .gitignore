@@ -1,0 +1,8 @@
+/*
+!/.gitignore
+!/ldecod/
+!/lencod
+!/rtpdump/
+!/ldecod/**
+!/lencod/**
+!/rtpdump/**

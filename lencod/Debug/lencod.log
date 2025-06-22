@@ -1,0 +1,193 @@
+﻿D:\VS2022\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1123,5): warning MSB4211: 正在首次将属性“GetTargetPathDependsOn”设置为某个值，但已在“D:\VS2022\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (2232,5)”处使用了该属性。
+  annexb.c
+  biariencode.c
+  block.c
+E:\H264\project\JM_86\JM\lencod\src\annexb.c(94,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\biariencode.c(79,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/block.c”)
+  
+  cabac.c
+  configfile.c
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(231,9): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(255,20): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(257,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(263,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(270,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(275,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(380,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(385,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(394,18): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(396,11): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(403,9): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(407,18): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(409,11): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(486,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(492,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(498,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(504,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(510,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(516,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(524,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(529,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(534,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(539,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(547,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(553,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(565,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(573,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(581,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(587,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(630,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(636,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(643,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(650,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(665,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(672,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(677,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(679,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(683,47): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(685,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(689,49): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(691,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(699,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(709,65): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(711,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(724,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(725,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(737,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(738,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(739,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(740,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(756,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(759,13): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(762,11): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(773,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(780,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(786,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(792,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(800,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(807,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(817,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(823,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(830,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(837,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(848,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(864,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(898,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(906,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(911,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(916,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(921,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(926,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(931,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(941,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(946,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(951,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(956,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(966,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\configfile.c(972,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  context_ini.c
+  decoder.c
+  fast_me.c
+  filehandle.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/filehandle.c”)
+  
+E:\H264\project\JM_86\JM\lencod\src\filehandle.c(75,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\filehandle.c(122,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  fmo.c
+  header.c
+  image.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/image.c”)
+  
+E:\H264\project\JM_86\JM\lencod\src\image.c(502,49): warning C4244: “=”: 从“time_t”转换到“int”，可能丢失数据
+E:\H264\project\JM_86\JM\lencod\src\image.c(317,3): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\image.c(497,3): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  intrarefresh.c
+  leaky_bucket.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/leaky_bucket.c”)
+  
+E:\H264\project\JM_86\JM\lencod\src\leaky_bucket.c(53,11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\leaky_bucket.c(61,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\leaky_bucket.c(130,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\leaky_bucket.c(132,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  lencod.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/lencod.c”)
+  
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(915,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(917,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1114,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1116,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1118,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1140,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1142,7): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1148,3): warning C4996: '_strdate': This function or variable may be unsafe. Consider using _strdate_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1151,3): warning C4996: '_strtime': This function or variable may be unsafe. Consider using _strtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\lencod.c(1232,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  loopFilter.c
+  macroblock.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/macroblock.c”)
+  
+E:\H264\project\JM_86\JM\lencod\src\macroblock.c(664,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\macroblock.c(3163,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\macroblock.c(3180,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\macroblock.c(3190,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\macroblock.c(3202,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\macroblock.c(3220,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  mbuffer.c
+  mb_access.c
+  memalloc.c
+E:\H264\project\JM_86\JM\lencod\src\memalloc.c(359,4): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  正在生成代码...
+  正在编译...
+  mv-search.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/mv-search.c”)
+  
+E:\H264\project\JM_86\JM\lencod\src\mv-search.c(1616,57): warning C4244: “=”: 从“__time64_t”转换到“int”，可能丢失数据
+E:\H264\project\JM_86\JM\lencod\src\mv-search.c(1545,3): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\H264\project\JM_86\JM\lencod\src\mv-search.c(1611,7): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  nal.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/nal.c”)
+  
+  nalu.c
+  nalucommon.c
+  output.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/output.c”)
+  
+  parset.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/parset.c”)
+  
+  parsetcommon.c
+  ratectl.c
+  rdopt.c
+  rdopt_coding_state.c
+  refbuf.c
+  rtp.c
+E:\H264\project\JM_86\JM\lencod\src\rtp.c(305,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  sei.c
+  slice.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/slice.c”)
+  
+E:\H264\project\JM_86\JM\lencod\src\slice.c(292,11): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  vlc.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/vlc.c”)
+  
+  weighted_prediction.c
+E:\H264\project\JM_86\JM\lencod\inc\contributors.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“lencod/src/weighted_prediction.c”)
+  
+  正在生成代码...
+D:\VS2022\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1392,5): warning MSB8012: TargetPath(E:\H264\project\JM_86\JM\lencod\Debug\lencod.exe) 与 Linker 的 OutputFile 属性值(E:\H264\project\JM_86\JM\bin\lencod.exe)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+annexb.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+  lencod.vcxproj -> E:\H264\project\JM_86\JM\lencod\Debug\lencod.exe
