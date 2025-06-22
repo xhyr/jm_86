@@ -1860,28 +1860,6 @@ int writeMBHeader (int rdopt)  // GB CHROMA !!!!!!!!
   
   int             WriteFrameFieldMBInHeader = 0;
 
-  if (img->MbaffFrameFlag)
-  {
-    if (0==(mb_nr%2))
-    {
-      WriteFrameFieldMBInHeader = 1; // top field
-
-      prevMbSkipped = 0;
-    }
-    else
-    {
-      if (prevMB->mb_type ? 0:((img->type == B_SLICE) ? !prevMB->cbp:1))
-      {
-        WriteFrameFieldMBInHeader = 1; // bottom, if top was skipped
-      }
-
-      topMB= &img->mb_data[img->current_mb_nr-1];
-      if(!(img->type == B_SLICE))
-        prevMbSkipped = (topMB->mb_type == 0);
-      else 
-        prevMbSkipped = (topMB->mb_type == 0 && topMB->cbp == 0);
-    }
-  }
   currMB->IntraChromaPredModeFlag = IS_INTRA(currMB);
 
   // choose the appropriate data partition
@@ -2115,31 +2093,6 @@ int writeMBHeader (int rdopt)  // GB CHROMA !!!!!!!!
       img->cod_counter = 0;
     }
   }
-  
-  //===== BITS FOR 8x8 SUB-PARTITION MODES =====
-  if (IS_P8x8 (currMB))
-  {
-    dataPart = &(currSlice->partArr[partMap[SE_MBTYPE]]);
-    
-    for (i=0; i<4; i++)
-    {
-      if (input->symbol_mode==UVLC)   currSE->mapping = ue_linfo;
-      else                            currSE->writing = writeB8_typeInfo_CABAC;
-
-      currSE->value1  = B8Mode2Value (currMB->b8mode[i], currMB->b8pdir[i]);
-      currSE->value2  = 0;
-      currSE->type    = SE_MBTYPE;
-      dataPart->writeSyntaxElement (currSE, dataPart);
-#if TRACE
-      snprintf(currSE->tracestring, TRACESTRING_SIZE, "8x8 mode/pdir(%2d) = %3d/%d",
-        i,currMB->b8mode[i],currMB->b8pdir[i]);
-#endif
-      bitCount[BITS_MB_MODE]+= currSE->len;
-      no_bits               += currSE->len;
-      currSE++;
-      currMB->currSEnr++;
-    }
-  }
 
  //===== BITS FOR INTRA PREDICTION MODES ====
   no_bits += writeIntra4x4Modes(-1);
@@ -2251,22 +2204,12 @@ void write_one_macroblock (int eos_bit)
   int*        bitCount = currMB->bitcounter;
   int i,j;
 
-  extern int cabac_encoding;
-
   //===== init and update number of intra macroblocks =====
   if (img->current_mb_nr==0)
     intras=0;
   //if ((img->type==P_SLICE || img->type==SP_SLICE || (img->type==B_SLICE && img->nal_reference_idc>0)) && IS_INTRA(currMB))
   if (IS_INTRA(currMB))
     intras++;
-
-  //--- write non-slice termination symbol if the macroblock is not the first one in its slice ---
-  if (input->symbol_mode==CABAC && img->current_mb_nr!=img->currentSlice->start_mb_nr && eos_bit)
-  {
-    write_terminating_bit (0);
-  }
-
-  cabac_encoding = 1;
 
   //--- write header ---
   writeMBHeader (0); 
@@ -2288,15 +2231,6 @@ void write_one_macroblock (int eos_bit)
 
   set_last_dquant();
 
-  //--- constrain intra prediction ---
-  if(input->UseConstrainedIntraPred && (img->type==P_SLICE || img->type==B_SLICE))
-  {
-    if( !IS_NEWINTRA( currMB ) && currMB->mb_type!=I4MB )
-    {
-      img->intra_block[img->current_mb_nr] = 0;
-    }
-  }
-
   //--- set total bit-counter ---
   bitCount[BITS_TOTAL_MB] = bitCount[BITS_MB_MODE] + bitCount[BITS_COEFF_Y_MB]     + bitCount[BITS_INTER_MB]
                           + bitCount[BITS_CBP_MB]  + bitCount[BITS_DELTA_QUANT_MB] + bitCount[BITS_COEFF_UV_MB];
@@ -2317,8 +2251,6 @@ void write_one_macroblock (int eos_bit)
   img->NumberofCodedMacroBlocks++;
   
   stat->bit_slice += bitCount[BITS_TOTAL_MB];
-
-  cabac_encoding = 0;
 }
 
 
